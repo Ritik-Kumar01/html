@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>facebook login</title>
+    <style>
+        body {
+            background-color: antiquewhite;
+        }
+        
+        .hello {
+            color: blue;
+            width: 225px;
+            height: 30px;
+            color: white;
+            background-color: blue;
+        }
+        
+        .email {
+            width: 225px;
+            height: 30px;
+            border: 1px solid black;
+        }
+        
+        .password {
+            width: 225px;
+            height: 30px;
+            border: 1px solid black;
+        }
+        
+        form {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+        }
+        
+        .form {
+            background-color: white;
+            padding: 20px;
+            margin: 40px;
+            height: 250px;
+            width: 250px;
+            position: relative;
+            box-shadow: 0 8px 16px 0 rgb(185, 167, 167), 0 0 16px 0 rgba(186, 173, 173, 0);
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        h2 {
+            color: darkblue;
+            margin-left: 70px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <form action="" class="for" onsubmit=" return validation()">
+        <div>
+            <div class="form">
+                <h2>Login</h2>
+                <h3>Name</h3>
+                <input class="email" type="text" id="username"><br><br>
+
+                <input type="submit" class="hello">
+
+            </div>
+
+
+    </form>
+    <script>
+        function validation() {
+            let a = document.getElemntById("username").value;
+            if (a == "") {
+                alert("no input is given");
+                document.getElementById("username").innerHTML = "input is not given";
+                return false;
+            }
+        }
+    </script>
+</body>
+
+</html>
